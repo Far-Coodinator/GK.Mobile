@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pwhite:rgb(255, 255, 255);
+    --nav-bottom:rgba(229, 229, 229, 0.494);
+    --littel-pink:rgba(250, 241, 240, 0.613);
+    --b-green:rgb(85, 166, 48);
+    --black:rgba(32, 30, 30, 0.619);
+    --black2:rgba(20, 19, 19, 0.908);
+    --light-gray:rgb(192, 193, 189);
+    --item-co-1:rgb(238, 238, 238);
+    --item-co-2:rgb(221, 221, 221);
+    --items-grid-co-1:rgb(52, 53, 54);
+    --items-grid-co-2:rgb(239, 243, 253);
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(45deg, var(--item-co-1), var(--item-co-2));
+  
+}
+
+/* logo style gose here... */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 10px; */
+    background:linear-gradient(var(--nav-bottom) , var(--littel-pink) 70%) ;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    height:55px;
+    z-index: 1;
+}
+
+#shop-name-1{
+    font-size: 1.2em;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gk{
+    color:var(--b-green);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.shop-logo-1{
+    display: flex;
+    align-items: center;
+}
+
+#shop-ico-1 img{
+    width:70px;
+    height:auto;
+}
+
+
+/* desktop nav goes here */
+#nav-2{
+  
+  justify-content: space-around;
+  width: 60%;
+  height: 100%;
+  align-items: center;
+  display: none;
+}
+
+#nav-2 a{
+  text-decoration: none;
+  color: #111;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#nav-2 a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* navigation bar */
+.nav-1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .nav-1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .nav-1 a:hover {
+    color: #f1f1f1;
+  }
+  
+  .nav-1 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #nav-1-a{
+    margin-right: 10px;
+  }
+
+
+  /* slide showing image styles gose here... */
+  .slide-show-container{
+    
+    padding:5%;
+  }
+
+  .sliding-pic {
+    display: none;
+    position: relative;
+    height:100%;
+  }
+
+  .s-img  {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:15px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+/* Slideshow container */
+.slideshower-box {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height:30vh;
+}
+
+/* fig-caption text */
+.slide-text {
+  color: #4d4141;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 8px 12px;
+  position: absolute;
+  bottom:1px;
+  width: 100%;
+  text-align: center;
+}
+
+/* number of the image in auto showing */
+.n-text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* doted-doted of bellow the image */
+.doted-doted {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* next-bt content  */
+
+.divider{
+  border-bottom: 2px solid var(--light-gray);
+  width: 80vw;
+  margin: 20px auto;
+}
+
+/* categories content gose here... */
+.category-selectors-container{
+  display: flex;
+  /* justify-content:center; */
+  width: 90%;
+  height: 120px;
+  margin: auto;
+  overflow:auto !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important; /* For IE and Edge */
+  ::-webkit-scrollbar {
+      display: none !important; /* For Chrome, Safari, and Opera */
+  }
+}
+
+
+
+.category{
+  margin: 10px;
+  width:80px;
+  height:auto;
+  position:relative;
+
+}
+
+.category img{
+  
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+  transition:width 0.5s ease, height 0.5s ease, box-shadow 0.5s ease
+}
+
+.category img:hover {
+  width:80px;
+  height: 80px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+.category-selectors-container a{
+  text-decoration: none;
+  color:var(--black);
+  
+}
+
+.category-conainer .cate-fig{
+  text-align: center;
+}
+
+
+/* items css gose here ........... */
+/* .............................. */
+.item .show-hiddens{
+  text-decoration: none;
+ 
+}
+
+.items_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  
+}
+
+.product-img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item{
+  /* border: 1px solid black; */
+  padding: 15px;
+  background: linear-gradient(45deg, var(--pwhite),var(--item-co-1));
+  border-radius: 10px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.product-name{
+  font-weight: normal;
+  color: var(--black2);
+}
+
+.offer-price{
+  color:rgba(109, 104, 104, 0.758);
+}
+
+.rs-price{
+  /* float: left; */
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--black2);
+  
+}
+
+/* .rs-price::part{
+  content: ":";
+} */
+
+.price{
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: red;
+}
+
+
+/* hidden div content gose here */
+
+.item-on-desktop{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure the hidden div is above other content */
+}
+
+.preview-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width:  80% ;
+  height: 80%;
+  background: linear-gradient(45deg, var(--item-co-1), var(--item-co-2));
+  overflow-y: auto;
+ 
+}
+
+
+.closing-button{
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  font-size: 1.7em;
+  font-weight: bold;
+  opacity: 0.4;
+  
+}
+
+.pre-pic{
+  width:100%;
+  aspect-ratio: 10/7;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.de-product-name{
+  font-weight:bold;
+  color: var(--black2);
+  font-size: 1.6em;
+  margin-top: 5px;
+}
+
+.item-code-nu{
+  font-size: 1.18em;
+  color: rgba(0, 0, 0, 0.841);
+}
+
+.code-span{
+  color: rgba(59, 58, 58, 0.703);
+  text-decoration: underline;
+}
+
+.descriptionof-product{
+  font-size: 0.99em;
+  font-weight: lighter;
+  color: #818181;
+  margin-top: 10px;
+}
+
+
+
+/* .product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.product-price {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.product-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.product-specifications {
+  margin-bottom: 20px;
+}
+.product-specifications dt {
+  font-weight: bold;
+}
+.product-specifications dd {
+  margin: 0 0 10px 0;
+}
+.add-to-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.customer-reviews {
+  font-size: 14px;
+  color: #444;
+}
+
+ */
+
+
+
+.item-on-mobile{
+  position:relative;
+}
+
+      
+
+
+
+/* animation of slide showing content */
+
+@keyframes fade {
+  from {
+    opacity: .4
+  } 
+  to {
+    opacity: 1
+  }
+}
+
+
+
+
+  /* media quary of navbar */
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  /* media quary of nav-2 to active
+  others .like categoty items..................... */
+  @media screen and (min-width:590px ) {
+    #nav-2{
+      display: flex;
+    }
+    #nav-1, #nav-1-a{
+      display: none;
+    } 
+
+    .slideshower-box{
+      height: 60vh;
+    }
+
+    /* to make the category images as box .. */
+
+    
+    /* .category img{
+      width:100%;
+      height:auto;
+      border-radius: 5px;
+
+    }
+    .category{
+      height: auto;
+      width: 100%;
+    }
+    .category-selectors-container{
+      overflow:visible;
+      flex-wrap: wrap;
+      height: auto;
+      
+    }
+    
+    
+    .category-selectors-container a{
+      max-width: 155px;
+      width:25%;
+      height: fit-content;
+     margin:10px;
+    }
+    .category img:hover{
+      width:100%;
+      height:auto;
+      border-radius: 5px;
+
+
+    } */
+    .category-selectors-container{
+      justify-content: center;
+    }
+
+  }
+
+
+  /* media quary of slide showing */
+  
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
