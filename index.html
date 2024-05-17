@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>GK MOBILE</title>
+    <link rel="stylesheet" href="styles.css">
+
+     <!--favicon gose here-->
+     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+     <link rel="icon" type="image/png" sizes="" href="apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+     <link rel="icon" type="image/x-icon" sizes="" href="favicon.ico">
+
+     <!-- font style link for GK mobile logo -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+
+     <!-- font style for amount -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- navbar content gose here.. -->
+    <header class="nav-bar-section">
+        <nav id="navbar">
+            <div class="shop-logo-1">
+                <div id="shop-ico-1">
+                    <img src="logo.png" />
+                </div>
+                <div id="shop-name-1"><span class="gk">GK</span> MOBILE</div>
+            </div>
+            
+              <div id="nav-1" class="nav-1 nav-for-desktop">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Repiar Zone</a>
+                <a href="#">Contact Us</a>
+              </div>
+              <span id="nav-1-a" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                       
+                <div id="nav-2" class="nav-for-mobile">
+                    <a href="#">Home</a>
+                    <a href="#">Repair Zone</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+        </nav>
+    </header>
+
+    <!-- slide showing content gose here... -->
+    <section class="slide-show-container">
+        <div class="slideshower-box">
+
+            <div class="sliding-pic fade">
+              <!-- <div class="n-text">1 / 3</div> -->
+              <img class="s-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfrlNI-jCBaHcxZv1M6YCGtvXpc_PiDY1V4T6JpRKOwms0YRnPCedeDEaWljlLkPHfpuU&usqp=CAU" />
+              <div class="slide-text">Caption Text</div>
+            </div>
+            
+            <div class="sliding-pic fade">
+              <!-- <div class="n-text">2 / 3</div> -->
+              <img class="s-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-YINrdx0kOeUkGTGlK9syHt-ZeYZCqBTsSeJBsVpgqHiptcheWhqhjkMkYwRWkwxF4k&usqp=CAU" />
+              <div class="slide-text">Caption Two</div>
+            </div>
+            
+            <div class="sliding-pic fade">
+              <!-- <div class="n-text">3 / 3</div> -->
+              <img class="s-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXHPKI44U3bNHTcBJZggMKXbianv2updSO5URJgKPoMA&s" />
+              <div class="slide-text">Caption Three</div>
+            </div>
+
+
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="doted-doted"></span> 
+              <span class="doted-doted"></span> 
+              <span class="doted-doted"></span>
+              
+            </div>
+            
+    </section>
+
+    
+    <div class="divider"></div>
+    
+    <!-- categories title content gose here.. -->
+    <section class="categories-title">
+        <div class="category-selectors-container">
+            <a href="#" onclick="filter('chargers')" id="charger-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                         <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbu4d3vw4z2M3jnWKwSQwBQ-8MASKyKpkQvDiqMU6c9cufe0Zys3ULXKqdVKhzrD1yEMgX_NCy8RTS9s9lbtY6WeiAszC-y3xo=s2560" alt="Chargers" title="GK Mobile (Chargers)">
+                        <figcaption class="cate-fig">Chargers</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="#" onclick="filter('headphones')" id="headphone-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                         <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaUdRhIX6NBjqQgvn0GWz4W-GLcoKzvm5oNwJTNY9e5VtnQwOGfn3slvapzdpLqpp30mtPW9BYlycDvmTGB24OOkuUvJG6Jqw=s2560" alt="Headphone" title="GK Mobile (Headphones)">
+                         <figcaption class="cate-fig">Headphones</figcaption>
+                    </figure>    
+                </div>
+            </a>
+            <a href="#" onclick="filter('backcovers')" id="backcover-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaZGB2dcDusFxdxQ0suHOwpFIOkp3q7j3VTwe1OGVuxIykgwHgnKY1vuvxSxPjd9DtNiMI_qUcxVa19l7UOE0cUEr71Kun1Hg=s2560" alt="backcover" title="GK Mobile (Mobiles backcover)">
+                        <figcaption class="cate-fig">Backcover</figcaption>
+                     </figure>
+                </div>
+            </a>
+            <a href="#" onclick="filter('tempereds')" id="temered-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYwLhgdAoiCqP7eagRbHi_oubTBZD6UYZ9Kl1V4BPwGeSbmFycIyniyPQIhaJFZKOZgtzYRpoGhh_b0SQPN31z5kZG7AQkWWvI=s2560" alt="Tempet" title="GK Mobile (Tempets)">
+                        <figcaption class="cate-fig">Tempered</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="#" onclick="filter('airpods')" id="airpod-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZLr1klnB4aXPuYfjGl4YRrDV35GAHuujBZsNsF3mHEtbII-A6c_AbURWrcMxJVABxWphcdfmNMBriGsRjaY_kIqRrLA6umbQ=s2560" alt="Airpods" title="GK Mobile (Airpods)">
+                        <figcaption class="cate-fig">Airpods</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="#" onclick="filter('others')" id="other-selector" class="selectors">
+                <div class="category">
+                    <figure>
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihY7zJm_T4ykE8vHrmaj6LDB483MOps7YMh_QWhP_kz_NIQu0lPx2ro12sDIoOBWX80vyRrpvAoKTmeCCkXCePHfw_kAcUilDB8=s2560" alt="Others" title="GK Mobile (Mobile Other relatives)">
+                        <figcaption class="cate-fig">Others</figcaption>
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    
+
+    <!-- Alll item content gose here in grid display -->
+    <section class="all-items">
+
+        <div class="items_grid">
+
+
+                 <!-- 01 main div of item code (ch-001-01)  -->
+
+            <div class="item" id="ma-ch-001-01" data-category="chargers">
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-ch-001-01')" class="show-hiddens" id="show-hiddens-ch-001-01">
+                    <div class="item-on-mobile" id="mo-ch-001-01">
+                        <img src="https://m.media-amazon.com/images/I/513Dr1J4IdL._AC_UF1000,1000_QL80_.jpg" class="product-img" id="product-img-mo-ch-001-01" title="20W iPhone Charger Plug and Cable, iPad Charging Plug">
+                        <h3 class="product-name" id="product-name-mo-ch-001-01">
+                            20W iPhone Charger Plug and Cable, iPad Charging Plug
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-ch-001-01">
+                            RS <span class="price" id="price-mo-ch-001-01">912.00</span>
+                        </p>
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>1200.00</del> (%24)
+                            </p>
+                        </div>
+                    </div>     
+                </a>
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-ch-001-01">
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-ch-001-01')" class="closing-button">&times;</button>
+                            <div class="de-conatiner">
+                                <img src="https://m.media-amazon.com/images/I/513Dr1J4IdL._AC_UF1000,1000_QL80_.jpg" alt="20W iPhone Charger Plug and Cable, iPad Charging Plug" class="pre-pic">
+                            </div>
+                            <h3 class="de-product-name" id="product-name-de-ch-001-01">
+                                 20W iPhone Charger Plug and Cable, iPad Charging Plug
+                            </h3>
+                            <p class="item-code-nu">Item Code: <span class="code-span">ch-001-01</span> </p>
+                            <p class="rs-price" id="rs-price-mo-ch-001-01">
+                                RS <span class="price" id="price-mo-ch-001-01">912.00</span>
+                            </p>
+                            <div class="offer-box">
+                                <p class="offer-price">
+                                    RS <del>1200.00</del> (%24)
+                                </p>
+                            </div>
+
+                            <p class="descriptionof-product">
+                                This 20W iPhone charger plug and cable is perfect for fast charging your iPhone and iPad devices. With its compact design, it is easy to carry and store, making it ideal for home, office, and travel use.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+
+                 <!-- 02  main div of item code (hp-001-01)  -->
+
+            <div class="item" id="ma-hp-001-01" data-category="headphones" >
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-hp-001-01')" class="show-hiddens" id="show-hiddenshp-001-01">
+                    <div class="item-on-mobile" id="mo-hp-001-01">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYKB4ql1cxjBCvnI33jyB2qdeubgOg1TPizk_IPtyRusV6_5Xyl4JaJ1FDyCfxk0sDBs&usqp=CAU" alt="product-name" class="product-img" id="product-img-mo-hp-001-01" title="Tune 205bt Harman Sound Quality Neck Headphone">
+                        <h3 class="product-name" id="product-name-mo-hp-001-01">
+                            Tune 205bt Harman Sound Quality Neck Headphone
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-hp-001-01">
+                            RS <span class="price" id="price-mo-hp-001-01">218.4</span>
+                        </p>
+                    
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>420.00</del> (%48)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-hp-001-01">
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-hp-001-01')" class="closing-button">&times;</button>
+                        </div>
+                    </div>
+                
+            </div>
+
+
+             <!-- 03 main div of item code (bc-001-01)-->
+
+            <div class="item" id="ma-bc-001-01" data-category="backcovers" >
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-bc-001-01')" class="show-hiddens" id="show-hiddens-bc-001-01">
+                    <div class="item-on-mobile" id="mo-bc-001-01">
+                        <img src="https://www.dohansqatar.com/cdn/shop/files/dohans-mobile-phone-cases-green-iphone-13-pro-max-3d-texture-fancy-cover-case-34685483745476.jpg?v=1691730711" alt="product-name" class="product-img" id="product-img-mo-bc-001-01" title="iPhone 13 Pro Max 3D Texture Fancy Cover & Case">
+                        <h3 class="product-name" id="product-name-mo-bc-001-01">
+                            iPhone 13 Pro Max 3D Texture Fancy Cover & Case
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-bc-001-01">
+                            RS <span class="price" id="price-mo-bc-001-01">483.8</span>
+                        </p>
+                        <!-- <div class="buy-box" id="buy-box-mo-bc-001-01">
+                            <a href="" class="buynow" id="buynow-mo-bc-001-01">
+                                BUY
+                            </a>
+                        </div> -->
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>590.00</del> (%18)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                       
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-bc-001-01">
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-bc-001-01')" class="closing-button">&times;</button>
+                        </div>
+                    </div>
+                
+            </div>
+
+             <!-- 04 main div of item code (bc-001-02) -->
+
+            <div class="item" id="ma-bc-001-02" data-category="backcovers" >
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-bc-001-02')" class="show-hiddens" id="show-hiddens-bc-001-01">
+                    <div class="item-on-mobile" id="mo-bc-001-02">
+                        <img src="https://www.dohansqatar.com/cdn/shop/products/dohans-mobile-phone-cases-green-samsung-galaxy-a34-5g-silicone-back-case-cover-34349202374852.jpg?v=1711734217" alt="product-name" class="product-img" id="product-img-mo-bc-001-01" title="Samsung Galaxy A34 5G Silicone Back Case & Cover">
+                        <h3 class="product-name" id="product-name-mo-bc-001-02">
+                            Samsung Galaxy A34 5G Silicone Back Case & Cover 
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-bc-001-02">
+                            RS <span class="price" id="price-mo-bc-001-02">260.00</span>
+                        </p>
+                        
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>520.00</del> (%50)
+                            </p>
+                        </div>
+                    </div>
+                
+                        
+                      
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-bc-001-02">
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-bc-001-02')" class="closing-button">&times;</button>
+                        </div>
+                    </div>
+            
+            </div>
+
+
+             <!-- 05 main div of item code (tm-001-01)  -->
+
+            <div class="item" id="ma-tm-001-01" data-category="tempereds">
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-tm-001-01')" class="show-hiddens" id="show-hiddens-tm-001-01">
+                    <div class="item-on-mobile" id="mo-tm-001-01">
+                        <img src="https://images-cdn.ubuy.qa/636d7903038b0e3c0d1f33f9-sumsung-galaxy-s22-tempered-glass-screen.jpg" class="product-img" id="product-img-mo-tm-001-01" title="Samsung Galaxy S22 Tempered Glass Screen Protector">
+                        <h3 class="product-name" id="product-name-mo-tm-001-01">
+                            Samsung Galaxy S22 Tempered Glass Screen Protector
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-tm-001-01">
+                            RS <span class="price" id="price-mo-tm-001-01">485.00</span>
+                        </p>
+                        
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                <!-- RS <del>1200.00</del> (%24) -->
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                        
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-tm-001-01" >
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-tm-001-01')" class="closing-button">&times;</button>
+                        </div>
+                    </div>
+            </div>
+
+
+             <!-- 06 main div of item code (ar-001-01)  -->
+
+            <div class="item" id="ma-ar-001-01" data-category="airpods">
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-ar-001-01')" class="show-hiddens" id="show-hiddens-ar-001-01">
+                    <div class="item-on-mobile" id="mo-ar-001-01">
+                        <img src="https://as-images.apple.com/is/MTJV3_AV4?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1694014874426" class="product-img" id="product-img-mo-ar-001-01" title="AirPods Pro (2nd generation) with MagSafe Charging Case (USB-C) ">
+                        <h3 class="product-name" id="product-name-mo-ar-001-01">
+                            AirPods Pro (2nd generation) with MagSafe Charging Case (USB-C) 
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-ar-001-01">
+                            RS <span class="price" id="price-mo-ar-001-01">5980.00</span>
+                        </p>
+                        
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>6500.00</del> (%8)
+                            </p>
+                        </div>
+                    </div>
+
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-ar-001-01" >
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-ar-001-01')" class="closing-button">&times;</button>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- 07 main div of item code (ch-001-02)  -->
+            
+            <div class="item" id="ma-ch-001-02" data-category="chargers">
+                <!-- this div for mobile view -->
+                <a href="#" onclick="show_hidden_div('de-ch-001-02')" class="show-hiddens" id="show-hiddens-ch-001-02">
+                    <div class="item-on-mobile" id="mo-ch-001-02">
+                        <img src="https://iforum-sg.c.huawei.com/dddd/images/2019/7/19/1563502154548_133.png?imageId=18185" class="product-img" id="product-img-mo-ch-001-02" title="Q&A]Types of Huawei chargers and data cables - HUAWEI Community">
+                        <h3 class="product-name" id="product-name-mo-ch-001-02">
+                            Q&A]Types of Huawei chargers and data cables - HUAWEI Community
+                        </h3>
+                        <p class="rs-price" id="rs-price-mo-ch-001-02">
+                            RS <span class="price" id="price-mo-ch-001-02">9120.00</span>
+                        </p>
+                        
+                        <div class="offer-box">
+                            <p class="offer-price">
+                                RS <del>12000.00</del> (%24)
+                            </p>
+                        </div>
+                    </div>
+                        
+                </a>
+
+                    <!-- this div for desktop -->
+                    <div class="item-on-desktop" id="de-ch-001-02">
+                        <div class="preview-container">
+                            <button onclick="hide_show_content('de-ch-001-02')" class="closing-button">&times;</button>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur aut deleniti magni ipsa vel mollitia reiciendis sunt ipsam. Dolore consectetur mollitia, voluptate sapiente, saepe temporibus obcaecati iure quaerat libero quidem consequatur. Ratione vero cupiditate, velit quia ipsum officia ducimus suscipit voluptatibus distinctio itaque fugiat error ex quibusdam molestiae quod?</p>
+                        </div>
+                        
+                    </div>
+            </div>
+
+
+ 
+            
+         
+
+
+                
+
+        </div>
+
+    </section>
+
+    <script src="script.js">
+    </script>
+    <script>
+        let s_index = 1;
+s_Slides(s_index);
+
+function plusSlides(n) {
+  s_Slides(s_index += n);
+}
+
+function current_slide(n) {
+  s_Slides(s_index = n);
+}
+
+function s_Slides(n) {
+  let i;
+  let slide_s = document.getElementsByClassName("div-for-slide");
+  let doted_dots = document.getElementsByClassName("doted-dot");
+  if (n > slide_s.length) {s_index = 1}
+  if (n < 1) {s_index = slide_s.length}
+  for (i = 0; i < slide_s.length; i++) {
+    slide_s[i].style.display = "none";
+  }
+  for (i = 0; i < doted_dots.length; i++) {
+    doted_dots[i].className = doted_dots[i].className.replace(" active", "");
+  }
+  slide_s[s_index-1].style.display = "block";
+  doted_dots[s_index-1].className += " active";
+}
+    </script>
+</body>
+</html>
