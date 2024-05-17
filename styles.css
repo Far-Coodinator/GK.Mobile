@@ -283,7 +283,7 @@ body{
 
 .item{
   /* border: 1px solid black; */
-  padding: 15px;
+  padding: 8px;
   background: linear-gradient(45deg, var(--pwhite),var(--item-co-1));
   border-radius: 10px;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
@@ -292,7 +292,7 @@ body{
 .product-name{
   font-weight: normal;
   color: var(--black2);
-  font-size: 0.98em;
+  font-size: 18px;
 }
 
 .offer-price{
