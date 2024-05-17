@@ -292,6 +292,7 @@ body{
 .product-name{
   font-weight: normal;
   color: var(--black2);
+  font-size: 0.98em;
 }
 
 .offer-price{
