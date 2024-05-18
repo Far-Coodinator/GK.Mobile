@@ -16,6 +16,8 @@
     --item-co-2:rgb(221, 221, 221);
     --items-grid-co-1:rgb(52, 53, 54);
     --items-grid-co-2:rgb(239, 243, 253);
+    --buybt1:rgb(0, 114, 0);
+    --buybt2:rgb(56, 176, 0);
 }
 
 body{
@@ -344,7 +346,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  padding: 15px;
+  padding: 8px 15px 15px 15px ;
   border-radius: 10px;
   width:  80% ;
   height: 80%;
@@ -384,10 +386,27 @@ body{
   font-size: 1.18em;
   color: rgba(0, 0, 0, 0.841);
 }
+.de-offer-price{
+  color:rgba(109, 104, 104, 0.758);
+  align-self: flex-end;
+  margin-left: 20px;
+ 
+}
+
+.de-offer-price-box{
+  display: flex;
+  width: 100%;
+}
+
+.de-divider{
+  border-bottom: 2px solid var(--light-gray);
+  width: 90%;
+  margin: 3px auto;
+}
 
 .code-span{
   color: rgba(59, 58, 58, 0.703);
-  text-decoration: underline;
+  
 }
 
 .descriptionof-product{
@@ -397,6 +416,26 @@ body{
   margin-top: 10px;
 }
 
+.specailist-of-product dt {
+  font-weight: bold;
+}
+.specailist-of-product dd {
+  margin: 0 0 10px 0;
+}
+.buy-bt {
+  background: linear-gradient(var(--buybt1) 30%, var(--buybt2) );
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
 
 
 /* .product-container {
@@ -426,13 +465,13 @@ body{
   color: #666;
   margin-bottom: 20px;
 }
-.product-specifications {
+.specailist-of-product {
   margin-bottom: 20px;
 }
-.product-specifications dt {
+.specailist-of-product dt {
   font-weight: bold;
 }
-.product-specifications dd {
+.specailist-of-product dd {
   margin: 0 0 10px 0;
 }
 .add-to-cart {
@@ -543,6 +582,23 @@ body{
 
   .product-img{
     aspect-ratio: 10/9;
+  
   }
- 
+  .specailist-of-product dd{
+    margin: 0 0 2px 0;
+    color:  rgba(45, 43, 43, 0.703);;
+  }
+  .de-product-name{
+    font-size: 17px;
+  }
+  .item-code-nu{
+    font-size: 12px;
+  }
+  .inq-product{
+    font-size:10px ;
+    color: rgb(77, 75, 75);
+  }
+  .preview-container{
+    height: auto;
+  }
 }

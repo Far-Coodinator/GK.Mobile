@@ -25,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
 
+    <!-- fontawesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <!-- navbar content gose here.. -->
@@ -176,9 +178,8 @@
                 </a>
                     <!-- this div for desktop -->
                     <div class="item-on-desktop" id="de-ch-001-01">
-                        
+                        <button onclick="hide_show_content('de-ch-001-01')" class="closing-button">&times;</button>
                         <div class="preview-container">
-                            <button onclick="hide_show_content('de-ch-001-01')" class="closing-button">&times;</button>
                             <div class="de-conatiner">
                                 <img src="https://m.media-amazon.com/images/I/513Dr1J4IdL._AC_UF1000,1000_QL80_.jpg" alt="20W iPhone Charger Plug and Cable, iPad Charging Plug" class="pre-pic">
                             </div>
@@ -186,18 +187,31 @@
                                  20W iPhone Charger Plug and Cable, iPad Charging Plug
                             </h3>
                             <p class="item-code-nu">Item Code: <span class="code-span">ch-001-01</span> </p>
-                            <p class="rs-price" id="rs-price-mo-ch-001-01">
-                                RS <span class="price" id="price-mo-ch-001-01">912.00</span>
-                            </p>
-                            <div class="offer-box">
-                                <p class="offer-price">
-                                    RS <del>1200.00</del> (%24)
+                            <div class="de-offer-price-box">
+                                <p class="rs-price" id="rs-price-mo-ch-001-01">
+                                    RS <span class="price" id="price-mo-ch-001-01">912.00</span>
                                 </p>
-                            </div>
-
-                            <p class="descriptionof-product">
-                                This 20W iPhone charger plug and cable is perfect for fast charging your iPhone and iPad devices. With its compact design, it is easy to carry and store, making it ideal for home, office, and travel use.
-                            </p>
+                                <p class="de-offer-price">
+                                        RS <del>1200.00</del> (%24)
+                                </p> 
+                            </div>   
+                            <div class="de-divider"></div>
+                            <dl class="specailist-of-product">
+                                <dt>Compatibility:</dt>
+                                <dd>iPhone 12/12 Pro/12 Pro Max/11/11 Pro/X/XS/XR, iPad Pro/Air, and more</dd>
+                                <dt>Output Power:</dt>
+                                <dd>20W</dd>
+                                <dt>Included Cable:</dt>
+                                <dd>1m USB-C to Lightning Cable</dd>
+                                <dt>Dimensions:</dt>
+                                <dd>2.5 x 1.5 x 1 inches</dd>
+                                <dt>Weight:</dt>
+                                <dd>50g</dd>
+                                <dt>Color:</dt>
+                                <dd>White</dd>
+                            </dl>
+                            <p class="inq-product">For additional inquiries, please click the 'Buy' button.</p>
+                            <button onclick="buyit()" class="buy-bt"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                         </div>
                     </div>
             </div>
