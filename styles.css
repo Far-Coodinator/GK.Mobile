@@ -388,8 +388,9 @@ body{
 }
 .de-offer-price{
   color:rgba(109, 104, 104, 0.758);
-  align-self: flex-end;
-  margin-left: 20px;
+  align-self:center ;
+  margin-left: 15px;
+  
  
 }
 
@@ -586,19 +587,31 @@ body{
   }
   .specailist-of-product dd{
     margin: 0 0 2px 0;
-    color:  rgba(45, 43, 43, 0.703);;
+    color:  rgba(45, 43, 43, 0.703);
+    font-size: 11px;
   }
   .de-product-name{
     font-size: 17px;
   }
   .item-code-nu{
-    font-size: 12px;
+    font-size: 10px;
   }
   .inq-product{
-    font-size:10px ;
+    font-size:9px ;
     color: rgb(77, 75, 75);
   }
   .preview-container{
     height: auto;
+  }
+
+  .de-offer-price{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .de-offer-price-box .rs-price{
+    font-size:13px;
+  }
+  .specailist-of-product dt{
+    font-size: 12px;
   }
 }
