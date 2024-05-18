@@ -212,7 +212,7 @@ body{
   display: flex;
   /* justify-content:center; */
   width: 90%;
-  height: 120px;
+  height: 100px;
   margin: auto;
   overflow:auto !important;
   scrollbar-width: none !important;
@@ -226,7 +226,7 @@ body{
 
 .category{
   margin: 10px;
-  width:80px;
+  width:60px;
   height:auto;
   position:relative;
 
@@ -257,6 +257,12 @@ body{
 
 .category-conainer .cate-fig{
   text-align: center;
+  margin: 10px;
+}
+.category figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -269,8 +275,8 @@ body{
 
 .items_grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
   padding: 15px;
   
 }
@@ -495,40 +501,6 @@ body{
       height: 60vh;
     }
 
-    /* to make the category images as box .. */
-
-    
-    /* .category img{
-      width:100%;
-      height:auto;
-      border-radius: 5px;
-
-    }
-    .category{
-      height: auto;
-      width: 100%;
-    }
-    .category-selectors-container{
-      overflow:visible;
-      flex-wrap: wrap;
-      height: auto;
-      
-    }
-    
-    
-    .category-selectors-container a{
-      max-width: 155px;
-      width:25%;
-      height: fit-content;
-     margin:10px;
-    }
-    .category img:hover{
-      width:100%;
-      height:auto;
-      border-radius: 5px;
-
-
-    } */
     .category-selectors-container{
       justify-content: center;
     }
@@ -542,4 +514,35 @@ body{
   .text {
     font-size: 11px
   }
+}
+
+@media only screen and (max-width:430px){
+  body{
+    font-size: 14px;
+  }
+  .item-on-mobile .rs-price{
+    font-size: 13px;
+  }
+  .item-on-mobile .product-name{
+    font-size: 15px;
+  }
+  .item-on-mobile .offer-price{
+    font-size: 12px;
+  }
+
+  .category img{
+    width: 58px;
+    height: 58px;
+
+  }
+
+  .category img:hover{
+    width: 58px;
+    height: 58px;
+  }
+
+  .product-img{
+    aspect-ratio: 10/9;
+  }
+ 
 }

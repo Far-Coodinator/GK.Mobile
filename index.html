@@ -176,6 +176,7 @@
                 </a>
                     <!-- this div for desktop -->
                     <div class="item-on-desktop" id="de-ch-001-01">
+                        
                         <div class="preview-container">
                             <button onclick="hide_show_content('de-ch-001-01')" class="closing-button">&times;</button>
                             <div class="de-conatiner">
@@ -421,33 +422,6 @@
 
     <script src="script.js">
     </script>
-    <script>
-        let s_index = 1;
-s_Slides(s_index);
-
-function plusSlides(n) {
-  s_Slides(s_index += n);
-}
-
-function current_slide(n) {
-  s_Slides(s_index = n);
-}
-
-function s_Slides(n) {
-  let i;
-  let slide_s = document.getElementsByClassName("div-for-slide");
-  let doted_dots = document.getElementsByClassName("doted-dot");
-  if (n > slide_s.length) {s_index = 1}
-  if (n < 1) {s_index = slide_s.length}
-  for (i = 0; i < slide_s.length; i++) {
-    slide_s[i].style.display = "none";
-  }
-  for (i = 0; i < doted_dots.length; i++) {
-    doted_dots[i].className = doted_dots[i].className.replace(" active", "");
-  }
-  slide_s[s_index-1].style.display = "block";
-  doted_dots[s_index-1].className += " active";
-}
-    </script>
+   
 </body>
 </html>
