@@ -361,9 +361,9 @@ body{
   background-color: transparent;
   width: 20px;
   height: 20px;
-  font-size: 1.7em;
+  font-size: 2.5em;
   font-weight: bold;
-  opacity: 0.4;
+  opacity: 0.9;
   
 }
 
@@ -560,11 +560,24 @@ body{
   body{
     font-size: 14px;
   }
+  .slide-text{
+    display: none;
+  }
+  .slide-show-container{
+    padding: 3% 0;
+  }
   .item-on-mobile .rs-price{
     font-size: 13px;
   }
+  .divider{
+    margin: 10px auto;
+  }
+  .items_grid{
+    padding: 15px 18px;
+  }
   .item-on-mobile .product-name{
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
   }
   .item-on-mobile .offer-price{
     font-size: 12px;
@@ -581,6 +594,9 @@ body{
     height: 58px;
   }
 
+  .closing-button{
+    transform: translate(10px, 10px);
+  }
   .product-img{
     aspect-ratio: 10/9;
   
@@ -597,12 +613,22 @@ body{
     font-size: 10px;
   }
   .inq-product{
-    font-size:9px ;
+    font-size:8px ;
     color: rgb(77, 75, 75);
+    text-align: right;
+  }
+  .pre-pic{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .preview-container{
     height: auto;
+    padding:0;
   }
+  .pad{
+    width: 100%;
+    padding: 0 10px 5px 15px;
+  } 
 
   .de-offer-price{
     font-size: 10px;
@@ -613,5 +639,14 @@ body{
   }
   .specailist-of-product dt{
     font-size: 12px;
+  }
+  .buy-bt{
+    transform: translateX(100px);
+  }
+  #de-bc-001-01 .pre-pic{
+    /* transform: rotate(90deg);
+    width: 100%;
+    aspect-ratio: 10/7; */
+  
   }
 }
