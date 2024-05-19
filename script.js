@@ -84,8 +84,40 @@ function hide_show_content(divId) {
 }
 
 
-// function of the slideshow image div for desktop div
+// buy function gose here........
+let number = "+97474020623"
+let content = `Can i make purchase this?
+               or Can you provide any more detile about this product?`
+let whatsapp = "https://wa.me/"
 
+  function buy_ch_001_01(){
+    let product = "https://far-coodinator.github.io/GKMobile.com/#ma-ch-001-01";
+    let imageUrl = "https://m.media-amazon.com/images/I/513Dr1J4IdL._AC_UF1000,1000_QL80_.jpg";
+
+    window.open(whatsapp + number + "?text=" + encodeURIComponent(product + content + "\n" + imageUrl))
+  }
+
+
+
+
+// document.getElementById("whatsapp-link").addEventListener("click", function(event) {
+//   event.preventDefault();
+  
+//   // Image URL
+//   var imageUrl = "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fHww";
+  
+//   // Content
+//   var content = "Can I make a purchase?";
+  
+//   // WhatsApp number
+//   var phoneNumber = "74020643";
+  
+//   // Construct WhatsApp message URL
+//   var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(content + "\n" + imageUrl);
+  
+//   // Open WhatsApp with the message
+//   window.open(whatsappUrl, "_blank");
+// });
 
 
 
